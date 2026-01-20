@@ -109,6 +109,44 @@
       font-size: 0.85rem;
       color: var(--muted);
     }
+
+/* 2026 M1 – Wish 섹션 전용 사진 */
+.photo-m1-side img {
+  width: 320px;          /* ← 여기서 크기 조절 */
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.content-row {
+  display: flex;          /* ← 핵심 */
+  gap: 5rem;              /* 사진 ↔ 글 사이 간격 */
+  align-items: center;
+}
+
+.content-row.reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .content-row,
+  .content-row.reverse {
+    flex-direction: column;
+  }
+
+  .photo img {
+    width: 100%;
+  }
+}
+
+/* 2026 M1-003 전용 */
+.photo-m1-003 img {
+  width: 310px;        /* ← 여기서 조절 */
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+
   </style>
 </head>
 
@@ -191,14 +229,17 @@
   <section>
     <h2>5. Wish, Wish, Wish</h2>
 
-<!-- Photo -->
-  <div class="photo">
+<p>매년 바뀌는 소원을 기억하고 계신가요? 저는 비는 대상도 없이 매년 다른 시기에, 다른 방법으로 비는 소원이 있는데요. 그중 몇 가지만 적어보려고 해요. 저는 워낙 많은 소원을 가지고 있어서, 이렇게 나눠도 괜찮은 것들이 꽤 있거든요.</p>
+
+<div class="content-row">
+  <!-- 사진 -->
+  <div class="photo photo-m1-side">
     <img src="../image/2026-m1-001.jpg" alt="2026 Ball drop" />
     <span>흩날리는 소망들</span>
   </div>
 
-<p>매년 바뀌는 소원을 기억하고 계신가요? 저는 비는 대상도 없이 매년 다른 시기에, 다른 방법으로 비는 소원이 있는데요. 그중 몇 가지만 적어보려고 해요. 저는 워낙 많은 소원을 가지고 있어서, 이렇게 나눠도 괜찮은 것들이 꽤 있거든요.</p>
-
+  <!-- 글 -->
+  <div class="text">
     <ul>
       <li>‘안녕히’ 살기</li>
       <li>마음도 몸도 건강하기</li>
@@ -207,17 +248,24 @@
       <li>끝까지 사랑하기</li>
       <li>내 가치를 기준으로 판단하기</li>
     </ul>
+  </div>
+</div>
+
 <p>설명이 필요 없는 소원은 이 정도입니다. 소원이라기보다는 모토에 가까워 보일지도 모르겠어요. 그래도 전 이런 것들을 달로 별로 올려 보내고는 합니다.</p>
 
-<!-- Photo -->
-  <div class="photo">
+<div class="content-row reverse">
+  <div class="photo photo-m1-003">
     <img src="../image/2026-m1-003.jpg" alt="체리 피스타치오 케이크" />
     <span>세상에 나올 때마다 비웃음 당하는 나의 그림.</span>
   </div>
 
-<p>이건 올해 이루어졌으면 하는 소소한 꿈이에요. <체리 피스타치오 케이크> 만들기!</p>
-<p>작년 겨울부터 일면 없는 체리 피스타치오 케이크가 먹고 싶었는데, 열심히 검색해도 파는 곳을 발견하지 못했다는 슬픈 소식. 겨우내 레시피만 적어두고 끝났답니다. 올해는 저 케이크를 제 손으로 직접 만들어 먹을 거예요.
+  <div class="text">
+    <p>이건 올해 이루어졌으면 하는 소소한 꿈이에요.</p><p>&lt;체리 피스타치오 케이크&gt; 만들기!</p>
+<p>작년 겨울부터 일면 없는 체리 피스타치오 케이크가 먹고 싶었는데, 열심히 검색해도 파는 곳을 발견하지 못했다는 슬픈 소식. 겨우내 레시피만 적어두고 끝났답니다.</P><p>올해는 저 케이크를 제 손으로 직접 만들어 먹을 거예요.</p>
+  </div>
+</div>
   </section>
+
 
   <section>
     <h2>6. 맺는 말</h2>
