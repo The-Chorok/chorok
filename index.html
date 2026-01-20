@@ -141,6 +141,29 @@
 }
 
 
+.issue img {
+  width: 100%;
+  max-height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.issue-number {
+  color: #1F2933;          /* 글씨 색 */
+  font-family: "Noto Serif KR", serif; /* 폰트 */
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: block;          /* 줄 분리 */
+  margin-top: 0.4rem;
+}
+
+.issue-title {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+
   </style>
 </head>
 <body>
@@ -149,7 +172,7 @@
   <header>
     <div class="logo">초록</div>
     <form>
-      <input type="email" placeholder="메일 주소" />
+      <input type="email" placeholder="e-mail" />
       <button type="submit">구독</button>
     </form>
   </header>
@@ -175,10 +198,15 @@
       <section class="archive">
         <h3>Magazine</h3>
         <div class="grid" id="archiveGrid">
-          <a class="issue" href="issues/2026-m4.html" data-date="2026-12">2026 M4<span>타이틀 4</span></a>
-          <a class="issue" href="issues/2026-m3.html" data-date="2026-09">2026 M3<span>타이틀 3</span></a>
-          <a class="issue" href="issues/2026-m2.html" data-date="2026-06">2026 M2<span>타이틀 2</span></a>
-          <a class="issue" href="issues/2026-m1.html" data-date="2026-03">2026 M1<span>소원</span></a>
+          <a class="issue" href="issues/2026-m4.html" data-date="2026-12">2026 M4<span>이름</span></a>
+          <a class="issue" href="issues/2026-m3.html" data-date="2026-09">2026 M3<span>관찰</span></a>
+          <a class="issue" href="issues/2026-m2.html" data-date="2026-06">2026 M2<span>낯섦</span></a>
+          <a class="issue" href="issues/2026-m1.html" data-date="2026-03">
+  <img src="image/2026-m1-001.jpg" alt="소원" />
+  <span class="issue-number">2026 M1</span>
+  <span class="issue-title">소원</span>
+</a>
+
         </div>
       </section>
     </div>
