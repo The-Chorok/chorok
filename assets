@@ -1,1 +1,63 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 200 230"
+  width="200"
+  height="230"
+>
+  <!-- <초록> geometric clover -->
+  <g
+    fill="none"
+    stroke="#3A9D45"
+    stroke-width="10"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+  >
 
+    <!-- TOP LEAF -->
+    <path d="
+      M 100 18
+      L 133 42
+      L 128 82
+      L 100 105
+      L 72 82
+      L 67 42
+      Z
+    "/>
+
+    <!-- LEFT LEAF -->
+    <path d="
+      M 27 78
+      L 61 60
+      L 91 88
+      L 70 118
+      L 35 106
+      Z
+    "/>
+
+    <!-- RIGHT LEAF -->
+    <path d="
+      M 173 78
+      L 139 60
+      L 109 88
+      L 130 118
+      L 165 106
+      Z
+    "/>
+
+  </g>
+
+  <!-- PEN / STEM -->
+  <path
+    d="
+      M 100 101
+      L 100 177
+      L 91 201
+      L 100 219
+      L 109 201
+      L 100 177
+      Z
+    "
+    fill="#3A9D45"
+  />
+
+</svg>
