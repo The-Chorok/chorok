@@ -1,1 +1,0 @@
-chorok magazine
