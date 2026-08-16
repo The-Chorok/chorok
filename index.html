@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="초록 — 완성본이 아닌 과정의 요약본. 생각과 성장의 흔적을 기록하는 1인 매거진.">
+  <title>초록 — 개인 사유 매거진</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- 왼쪽/오른쪽 클릭 영역 -->
+  <button class="edge-nav edge-left" id="prevBtn" aria-label="이전 페이지">
+    <span>←</span>
+  </button>
+
+  <button class="edge-nav edge-right" id="nextBtn" aria-label="다음 페이지">
+    <span>→</span>
+  </button>
+
+  <!-- 상단 고정 헤더 -->
+  <header class="site-header">
+    <a class="brand" href="#cover" aria-label="초록 첫 화면으로">
+      <span class="brand-mark">☘</span>
+      <span class="brand-name">초록</span>
+    </a>
+
+    <div class="issue-info">
+      <span>VOL. 01</span>
+      <span class="issue-line"></span>
+      <span>2026</span>
+    </div>
+  </header>
+
+  <main id="magazine">
+
+    <!-- 01 COVER -->
+    <section class="page page-cover" id="cover" data-page="0">
+      <div class="page-inner cover-inner">
+        <p class="eyebrow">PERSONAL MAGAZINE · VOL. 01</p>
+
+        <div class="logo-frame">
+          <!-- 실제 로고를 넣으려면 아래 파일명을 logo.svg로 바꿔 넣으세요. -->
+          <img src="logo.svg" alt="초록 세잎 클로버 로고"
+               onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='block';">
+          <div id="logoFallback" class="logo-fallback" aria-hidden="true">☘</div>
+        </div>
+
+        <h1>초록</h1>
+
+        <p class="cover-copy">
+          완성된 결론보다<br>
+          살아 있는 기록을.
+        </p>
+
+        <div class="cover-bottom">
+          <span>GROW · THINK · RECORD</span>
+          <span>SCROLL TO READ</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 INTRO -->
+    <section class="page" id="intro" data-page="1">
+      <div class="page-inner narrow">
+        <p class="page-number">01 / INTRO</p>
+
+        <h2>
+          어느 날의 생각이<br>
+          다음 계절의 나를 만든다.
+        </h2>
+
+        <div class="rule"></div>
+
+        <p class="lead">
+          <초록>은 한 사람이 살아가며 보고, 읽고, 생각하고,
+          배우고, 흔들린 흔적을 기록하는 1인 매거진입니다.
+        </p>
+
+        <p>
+          잘 다듬어진 결론만 남기는 대신 아직 문장이 되지 못한 생각,
+          어느 날 불현듯 마음에 들어온 질문, 시간이 지나며 달라진
+          관점까지 그대로 남겨두려고 합니다.
+        </p>
+
+        <p>
+          <strong>완성본이 아닌 과정의 요약본.</strong><br>
+          결과보다 사고의 흔적을, 성장의 분기별 스냅샷을 기록합니다.
+        </p>
+
+        <div class="signature">— 초록 편집부, 그리고 한 사람</div>
+      </div>
+    </section>
+
+    <!-- 03 ARTICLE -->
+    <section class="page page-article" id="article-01" data-page="2">
+      <div class="page-inner article-layout">
+        <div class="article-meta">
+          <span>ESSAY</span>
+          <span>01</span>
+        </div>
+
+        <article>
+          <p class="eyebrow">기록의 시작</p>
+          <h2>나는 왜<br>기록하려 하는가</h2>
+
+          <p class="article-intro">
+            기록은 지나간 시간을 붙잡아두는 일이 아니라,
+            지금의 내가 무엇을 보고 있는지를 확인하는 일인지도 모른다.
+          </p>
+
+          <div class="article-body">
+            <p>
+              사람은 계속 변한다. 어제 중요했던 것이 오늘은 아무렇지 않고,
+              별것 아니라고 생각했던 문장이 어느 날 갑자기 오래 마음에 남는다.
+            </p>
+
+            <p>
+              그래서 나는 생각이 완성될 때까지 기다리지 않기로 했다.
+              지금의 나에게는 지금의 문장이 있고, 지금만 할 수 있는 질문이 있다.
+            </p>
+
+            <p>
+              이곳에는 그런 것들을 한 장씩 놓아두려 한다.
+              언젠가 다시 읽었을 때 조금 부끄럽더라도,
+              그때의 내가 분명히 존재했다는 것을 알 수 있도록.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 04 NOTE -->
+    <section class="page page-note" id="note" data-page="3">
+      <div class="page-inner note-inner">
+        <p class="page-number">02 / NOTE</p>
+
+        <div class="note-card">
+          <span class="note-label">TODAY'S THOUGHT</span>
+
+          <blockquote>
+            “변하지 않는 것이<br>
+            꼭 좋은 것일까?”
+          </blockquote>
+
+          <p>
+            머물러 있는 것을 좋아하는 사람에게 변화는 가끔
+            불안한 단어다. 하지만 오래 생각해보면,
+            변하지 않기 위해 애쓰는 것 역시 하나의 변화인지 모른다.
+          </p>
+
+          <div class="note-date">2026. 08</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 INDEX -->
+    <section class="page page-index" id="index" data-page="4">
+      <div class="page-inner">
+        <p class="page-number">CONTENTS</p>
+
+        <h2>이번 호</h2>
+
+        <nav class="contents">
+          <a href="#intro">
+            <span>01</span>
+            <strong>초록에 대하여</strong>
+            <em>INTRO</em>
+          </a>
+
+          <a href="#article-01">
+            <span>02</span>
+            <strong>나는 왜 기록하려 하는가</strong>
+            <em>ESSAY</em>
+          </a>
+
+          <a href="#note">
+            <span>03</span>
+            <strong>오늘의 생각</strong>
+            <em>NOTE</em>
+          </a>
+        </nav>
+
+        <p class="index-note">
+          다음 호의 이야기는 아직 쓰이지 않았습니다.<br>
+          그래서 이 매거진은 계속됩니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- 06 END -->
+    <section class="page page-end" id="end" data-page="5">
+      <div class="page-inner end-inner">
+        <div class="mini-logo">☘</div>
+
+        <p class="eyebrow">THE END OF VOL. 01</p>
+
+        <h2>
+          다음 생각에서<br>
+          다시 만나요.
+        </h2>
+
+        <p>
+          초록은 아직 초록입니다.<br>
+          완성되지 않은 기록이므로.
+        </p>
+
+        <a class="back-home" href="#cover">처음으로 돌아가기 ↑</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 CHOROK</span>
+    <span>ONE-PERSON MAGAZINE</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
