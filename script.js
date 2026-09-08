@@ -1,73 +1,65 @@
-const pages = [...document.querySelectorAll(".page")];
-let currentIndex = 0;
-let isScrolling = false;
+const menuButton = document.getElementById("menuButton");
+const sideMenu = document.getElementById("sideMenu");
+const menuOverlay = document.getElementById("menuOverlay");
 
-function getCurrentPage() {
-  const center = window.scrollY + window.innerHeight / 2;
 
-  let closest = 0;
-  let distance = Infinity;
+function openMenu() {
 
-  pages.forEach((page, index) => {
-    const pageCenter = page.offsetTop + page.offsetHeight / 2;
-    const d = Math.abs(center - pageCenter);
+  sideMenu.classList.add("open");
+  menuOverlay.classList.add("open");
 
-    if (d < distance) {
-      distance = d;
-      closest = index;
-    }
-  });
-
-  return closest;
 }
 
-function goToPage(index) {
-  if (index < 0 || index >= pages.length) return;
 
-  currentIndex = index;
+function closeMenu() {
 
-  pages[index].scrollIntoView({
-    behavior: "smooth",
-    block: "start"
-  });
+  sideMenu.classList.remove("open");
+  menuOverlay.classList.remove("open");
+
 }
 
-document.getElementById("prevBtn").addEventListener("click", () => {
-  goToPage(getCurrentPage() - 1);
-});
 
-document.getElementById("nextBtn").addEventListener("click", () => {
-  goToPage(getCurrentPage() + 1);
-});
+if (menuButton) {
 
-/* 키보드로도 페이지 이동 */
-window.addEventListener("keydown", (event) => {
-  if (event.key === "ArrowLeft") {
-    event.preventDefault();
-    goToPage(getCurrentPage() - 1);
-  }
+  menuButton.addEventListener(
+    "click",
+    openMenu
+  );
 
-  if (event.key === "ArrowRight") {
-    event.preventDefault();
-    goToPage(getCurrentPage() + 1);
-  }
-});
+}
 
-/* 스크롤 위치에 따라 현재 페이지 번호 갱신 */
-window.addEventListener("scroll", () => {
-  currentIndex = getCurrentPage();
-}, { passive: true });
 
-/* 브라우저 뒤로가기 / 주소창의 # 이동 */
-window.addEventListener("load", () => {
-  const hash = window.location.hash;
+if (menuOverlay) {
 
-  if (hash) {
-    const target = document.querySelector(hash);
-    if (target) {
-      setTimeout(() => {
-        target.scrollIntoView({ behavior: "auto" });
-      }, 50);
+  menuOverlay.addEventListener(
+    "click",
+    closeMenu
+  );
+
+}
+
+
+document
+  .querySelectorAll(".side-menu a")
+  .forEach(link => {
+
+    link.addEventListener(
+      "click",
+      closeMenu
+    );
+
+  });
+
+
+document.addEventListener(
+  "keydown",
+  event => {
+
+    if (event.key === "Escape") {
+
+      closeMenu();
+
     }
+
   }
-});
+);
