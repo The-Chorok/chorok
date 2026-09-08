@@ -10,7 +10,7 @@
     stroke="#3A9D45"
     stroke-width="10"
     stroke-linejoin="round"
-    stroke-linecap="round"
+    stroke-linecap="butt"
   >
 
     <!-- TOP LEAF -->
@@ -45,6 +45,21 @@
     "/>
 
   </g>
+
+  <!-- ==============================
+       PEN BODY
+       ============================== -->
+
+  <path
+    d="
+      M 95 109
+      L 105 109
+      L 105 181
+      L 95 181
+      Z
+    "
+    fill="#3A9D45"
+  />
 
   <!-- PEN / STEM -->
   <path
