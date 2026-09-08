@@ -58,4 +58,16 @@
   fill="#3A9D45"
 />
 
+  <!-- FOUNTAIN PEN NIB -->
+<path
+  d="
+    M 96 190
+    L 100 218
+    L 104 190
+    L 100 178
+    Z
+  "
+  fill="#3A9D45"
+/>
+
 </svg>
