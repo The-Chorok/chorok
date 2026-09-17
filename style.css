@@ -18,3 +18,10 @@
 .story-article{padding-top:150px}.story-article-header{padding:100px 10vw;border-bottom:1px solid var(--line)}.story-article-header h1{max-width:900px;font-size:clamp(45px,8vw,100px);line-height:1.1;font-weight:400}.story-date{color:var(--muted);font-family:Arial,sans-serif;font-size:11px}.story-body{max-width:680px;margin:auto;padding:120px 30px}.story-body p{font-size:18px;margin:45px 0}
 .site-footer{padding:80px 8vw;border-top:1px solid var(--line);text-align:center;color:var(--muted)}.site-footer img{width:35px;height:35px;object-fit:contain;margin-bottom:15px}
 @media(max-width:700px){.category-nav{gap:22px}.category-nav a{font-size:10px}.home-cover{padding-left:25px;padding-right:25px}.cover-logo{width:75px;height:75px}.story-preview-grid{grid-template-columns:1fr}.issue-card{grid-template-columns:1fr;gap:35px}.issue-cover{max-width:360px}.story-card{grid-template-columns:45px 1fr;gap:15px}.story-card h2{font-size:32px}.category-header{padding-left:25px;padding-right:25px}.issue-list,.stories-list{padding-left:25px;padding-right:25px}.article-page{padding-left:25px;padding-right:25px}}
+
+
+.story-image.small {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
