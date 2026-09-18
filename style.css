@@ -20,10 +20,18 @@
 @media(max-width:700px){.category-nav{gap:22px}.category-nav a{font-size:10px}.home-cover{padding-left:25px;padding-right:25px}.cover-logo{width:75px;height:75px}.story-preview-grid{grid-template-columns:1fr}.issue-card{grid-template-columns:1fr;gap:35px}.issue-cover{max-width:360px}.story-card{grid-template-columns:45px 1fr;gap:15px}.story-card h2{font-size:32px}.category-header{padding-left:25px;padding-right:25px}.issue-list,.stories-list{padding-left:25px;padding-right:25px}.article-page{padding-left:25px;padding-right:25px}}
 
 
-.story-image.small {
-  width: 30%;
-  margin-left: auto;
-  margin-right: auto;
+.essay-image {
+  margin: 50px 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.essay-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 
