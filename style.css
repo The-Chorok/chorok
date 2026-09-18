@@ -21,16 +21,11 @@
 
 
 .essay-image {
-  margin: 50px 0;
-  padding: 0;
-  width: 100%;
-  box-sizing: border-box;
+  text-align: center;
 }
 
 .essay-image img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
+  width: 30%;
   height: auto;
 }
 
